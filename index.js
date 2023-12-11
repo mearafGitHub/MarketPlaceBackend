@@ -8,48 +8,47 @@ app.listen(
 )
 
 app.get("/auctionNfts", function (request, result) {
-
     const sample = {}
-    res.send(sample);
+    result.status(200).send(sample);
 });
 
-app.get('/fixedPriceNfts', async function(req, res, next){
+app.get('/fixedPriceNfts', async function(request, result, next){
     const sample = {}
-    res.send(sample);
+    result.send(sample);
 });
 
 app.post("/creatNFT", function (request, result) {
     
     const sample = {}
-    res.send(sample);
+    result.status(201).send(sample);
 });
 
-app.post('/createAuction', async function(req, res, next){
+app.post('/createAuction', async function(request, result, next){
     const sample = {}
-    res.send(sample);
+    result.status(201).send(sample);
 });
 
-app.get('/getAuctionEndTime', async function(req, res, next){
+app.get('/getAuctionEndTime', async function(request, result, next){
     const sample = {}
-    res.send(sample);
+    result.status(200).send(sample);
 });
 
-app.get('/bidders', async function(req, res, next){
+app.get('/bidders', async function(request, result,  next){
     const sample = {}
-    res.send(sample);
+    result.status(200).send(sample);
 });
 
-app.patch('/startAuction', async function(req, res, next){
+app.post('/startAuction', async function(request, result, next){
     const sample = {}
-    res.send(sample);
+    result.status(201).send(sample);
 });
 
-app.post('/endAuction', async function(req, res, next){
+app.post('/endAuction', async function(request, result, next){
     const sample = {}
-    res.send(sample);
+    result.status(201).send(sample);
 });
 
-app.get('/withdrawCollateral', async function(req, res, next){
+app.get('/withdrawCollateral', async function(request, result, next){
     const sample = {}
-    res.send(sample);
+    result.status(201).send(sample);
 });
